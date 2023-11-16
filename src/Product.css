@@ -11,8 +11,17 @@
     background-color: rgb(255, 255, 255);
     z-index: 1;
     width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+   
 
+}
 
+.product:hover{
+   
+    transition: background-color 0.3s;
+    transition: transform 0.3s;
+    transform: scale(1.1); 
 }
 
 .product> img{
@@ -28,13 +37,19 @@
 
 .product > button{
     
-    background:	#E50914 ;
+    background:	#e59b24 ;
     border: 8px solid black;
     margin-top: 10px;
-    border-color: 	#E50914;
+    border-color: 	#e59b24;
     color: #ffffff;
 
 
+}
+
+.product > button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
 }
 
 .product_price{

@@ -16,4 +16,21 @@
        margin-right: 10px;
        padding: 10px;
        border-bottom: 1px solid lightgray;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    }
+
+   .icon{
+    position: sticky;
+    color: #0e0e0e; /* Set the color to blue */
+  cursor: pointer;
+ /* Adjust the left distance as needed */
+  color: #030303; /* Set the color to blue */
+  cursor: pointer;
+  
+   /* Adjust the top distance as needed */
+  
+  width: 25px; 
+  margin-right: 10px;
+  margin-left: -20px;
+  
+}

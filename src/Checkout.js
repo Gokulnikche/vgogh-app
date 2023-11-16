@@ -3,17 +3,26 @@ import "./Checkout.css";
 import Subtotal from './Subtotal';
 import { useStateValue } from './StateProvider';
 import CheckoutProduct from './CheckoutProduct';
+import { Link } from 'react-router-dom';
+import { SlArrowLeft } from "react-icons/sl";
+import img7 from './images/image-1540x300.jpg';
 
 function Checkout() {
     const [{basket}, dispatch]= useStateValue();
 
   return (
     <div className='checkout' >
+      <Link to = '/'>
+         <SlArrowLeft className='icon'size={32} onClick={() => console.log('Arrow clicked')} /> </Link>
+
+         
+      
+         <Link to = '/'></Link>
      <div className="checkout_left">
-         <img className="checkout_ad"src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg" alt="" />
+         <img className="checkout_ad"src={img7} alt="" />
       <div>
      <h2 className="checkout_title">
-        Your Shopping Basket
+        YOUR SHOPPING BASKET
      </h2>
 
     
@@ -33,6 +42,7 @@ function Checkout() {
     <Subtotal/>
   <h2></h2>
    {}
+   
 </div>
 
     </div>

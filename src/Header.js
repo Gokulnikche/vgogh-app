@@ -28,22 +28,26 @@ const Header = () => {
       <div className='header_nav'>
         <Link to='/login'>
          <div className='header__option'>
+          
             <span 
              className='header__optionLineonee'>SIGN IN</span>
              
         </div>
         </Link>
          <div className='header__option'>
+          <Link to='/orders'>
             <span 
              className='header__optionLineone'>RETURNS &ORDERS</span>
-           
+           </Link>
 
          </div>
+         <Link to='/login'>
          <div className='header_option'>
          <span 
              className='header__optionLineone1'>PREMIUM MEMBER&nbsp;&nbsp;</span>
             
          </div>
+         </Link>
          <Link to="/checkout">
          <div className='header_optionBasket'>
           <ShoppingBasketIcon/>

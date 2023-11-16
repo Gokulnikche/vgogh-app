@@ -50,9 +50,9 @@ function Login() {
 
   return (
     <div className='login'>
-    <Link to = '/'>
+    
       <img className="login_logo" src={img123} alt="" />
-      </Link>
+     
 
 
      <div className="login_container">
