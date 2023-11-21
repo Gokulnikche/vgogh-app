@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Home.css'
 import img1 from './images/banner.JPEG';
 import Product from './Product';
 import { Link } from 'react-router-dom';
 
-const Home = () => {
+const Home = ({ searchTerm }) => {
+
+  const [products, setProducts] = useState([]);
+
+ 
+  const filteredProducts = products.filter((product) =>
+    product.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div className='home'>
        <div className="home_container">
